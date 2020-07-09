@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Direct Market</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id='wafield'>
+
+  <audio id="my_audio" src="https://www.tetangga-sebelah.com/whatsapp_ringtone.mp3"></audio>
+  
+  <header>
+    <a href='#profil'>
+      <img src='img.jpg' alt='ava'/>
+    </a>
+
+    <h4>X-iBypass</h4>
+    <small id='menulis'>Sedang menulis...</small><small id='status'>Terakhir Dilihat <time id='dateTime'></time></small>
+  </header>
+  <br/>
+  <div class='chat c1'>
+    Selamat Datang Di <b>X-iBypass</b> 🙏
+  </div>
+  <div class='chat c2'>
+    Silahkan hubungi saya melalui "Whatsapp" untuk memudahkan Layanan & Percakapan selanjutnya.. <small id='chatTime'></small>
+  </div>
+  <div class='field'>
+    <div id='option' class='option clear'>
+      <select id='layanan'>
+        <option value='pilihLayanan' selected hidden>Pilih Layanan →</option>
+        <option value='Bypass Biasa'>Bypass Biasa</option>
+        <option value='Bypass Premium'>Bypass Premium</option>
+        <option value='Bypass Cell Passcode'>Bypass Cell Passcode</option>
+        <option value='Bypass Cell Passcode Premium'>Bypass Cell Passcode Premium</option>
+        <option value='Bypass Cell HALO (No Meid)'>Bypass Cell HALO (No Meid)</option>
+      </select>
+      <input autocomplete='off' type='text' id='email' placeholder='Jenis iPhone/iPad/iPod ..'>
+      <input autocomplete='off' type='text' id='nama' placeholder='Nama ..'>
+      <input autocomplete='off' type='text' id='perusahaan' placeholder='iMei / Serial Number (Jika ada)'>
+    </div>
+    <div id='sendmessage' class='clear'>
+      <input type='tel' name='tel' id='tel' value='+62 851-5697-907-2' hidden>
+      <textarea type='textarea' name='pesan' id='pesan' placeholder='Tulis pesan...'></textarea>
+      <a class='kirimwa' href='javascript:void(0);'></a>
+
+    </div>
+  </div>
+
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

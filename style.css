@@ -1,0 +1,207 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background:#dbdbd3;
+}
+body:before {
+  content:'';
+  display:block;
+  position:absolute;
+  z-index:-1;
+  top:0;
+  left:0;
+  width:100%;
+  height:127px;
+  background:#009688;
+}
+b {
+  font-weight:500;
+}
+#wafield {
+  text-rendering:optimizeLegibility;
+  font-size:16px;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  max-width:calc(100% - 20px);
+  min-width:280px;
+  width:760px;
+  min-height:calc(100vh - 40px);
+  border-radius:3px;
+  box-shadow:0 1px 5px rgba(0,0,0,0.2);
+  margin:20px auto;
+  background:#e5ddd5 url(https://lh3.googleusercontent.com/-j4ZM9guJB7o/WtcreGub2CI/AAAAAAAAEoI/TwI7gBTRWFEj5XGOb4XFjeRAwVgZnWJlQCLcBGAs/s0/wa_bg.png) repeat center center;
+  background-size:cover;
+}
+#wafield, #wafield * {
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+#wafield header {
+  height:60px;
+  background:#eee;
+  border-radius:3px 3px 0 0;
+  margin-bottom:5px;
+}
+#wafield header img {
+  width:40px;
+  height:40px;
+  border-radius:40px;
+  float:left;
+  margin:10px 20px;
+}
+#wafield header h4 {
+  padding:10px 0 0;
+  margin:0;
+  font-weight:500;
+  font-size:15px;
+}
+#wafield header h4 input {
+  display:inline;
+  background:transparent;
+  border:none;
+  outline:none;
+}
+#wafield header small {
+  display:block;
+  opacity:.7;
+}
+#wafield header small#menulis {
+  color:green;
+}
+#wafield header small#status {
+  display:none;
+}
+#wafield .chat {
+  display:inline-block;
+  opacity:0;
+  max-width:calc(100% - 20px);
+  background:#fff;
+  color:#4d4d4d;
+  padding:10px 15px;
+  padding-right:40px;
+  font-size:90%;
+  margin:5px auto 5px 10px;
+  border-radius:6px;
+  position:relative;
+}
+@media(max-width:480px) {
+  #wafield .chat {
+    font-size:14px;
+  }
+}
+#wafield .chat small {
+  font-size:80%;
+  opacity:.6;
+  position:absolute;
+  bottom:5px;
+  right:5px;
+}
+#wafield .field {
+  display:block;
+  background:#f5f1ee;
+  color:#989c9d;
+  padding:10px;
+  margin-top:auto;
+}
+#wafield .field div.option {
+  display:none;
+  width:100%;
+  color:#4d4d4d;
+  border:none;
+  outline:none;
+  resize:none;
+  margin-bottom:10px;
+  padding-bottom:10px;
+  border-bottom:1px solid rgba(0,0,0,0.080);
+}
+#wafield .field div.option input {
+  display:block;
+  float:left;
+  margin:5px;
+  width:calc(50% - 10px);
+  height:40px;
+  line-height:40px;
+  padding:0 10px;
+  background:transparent;
+  color:#4d4d4d;
+  background:#fff;
+  border-radius:4px;
+  border:none;
+  outline:none;
+
+  /* ICON */
+  text-indent:30px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size:auto 20px;
+  background-position:10px 10px;
+}
+#wafield input#email {
+  background-image: url(https://upload.cc/i1/2020/06/27/9TYIjO.png);
+}
+#wafield input#nama {
+  background-image: url(https://lh3.googleusercontent.com/-AIQoz3eqd74/WtIab6tY5TI/AAAAAAAAEj0/VSt3vMVeiSoFzAgL9r51aE19mfXLbp-awCEwYBhgL/s20/default-avatar.png);
+}
+#wafield input#perusahaan {
+  background-image: url(https://upload.cc/i1/2020/06/27/kV2uE1.png);
+}
+#wafield .field div.option select {
+  display:block;
+  float:left;
+  margin:5px;
+  width:calc(50% - 10px);
+  height:40px;
+  line-height:40px;
+  padding:0 10px;
+  background:#fff;
+  color:#4d4d4d;
+  background:#fff;
+  border-radius:4px;
+  border:none;
+  outline:none;
+}
+#wafield .field .clear:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+#wafield .field textarea {
+  display:block;
+  float:left;
+  width:calc(100% - 80px);
+  height:50px;
+  background:#fff;
+  color:#4d4d4d;
+  padding:15px 20px;
+  border-radius:4px;
+  border:none;
+  outline:none;
+  resize:none;
+  overflow:hidden;
+}
+#wafield .field textarea:focus {
+  overflow-y:auto;
+}
+#wafield .field a.kirimwa {
+  display:block;
+  float:left;
+  background:transparent url(https://lh3.googleusercontent.com/-J_Dvg5M85ng/WtazGsvhUEI/AAAAAAAAEnU/Fe1xRGla5QUWeeP-n8cxdGj-F1-I-A_GwCLcBGAs/h20/send_wa.png) no-repeat center center;
+  width:80px;
+  height:50px;
+  line-height:80px;
+  text-align:center;
+  text-decoration:none;
+  color:#4d4d4d;
+  border-radius:2px;
+  border:none;
+  outline:none;
+  resize:none;
+  font-size:35px;
+  font-weight:bold;
+}
+
+#wafield .field:last-of-type {
+  border-radius:0 0 3px 3px;
+}
